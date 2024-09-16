@@ -434,6 +434,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width: 100%; /* Set the width of the container */
+  height: 100%; /* Set the height of the container */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Aligns image horizontally */
+  align-items: center; /* Aligns image vertically */
+}
+
+.proj-imgbx img {
+  width: 100%; /* Image fills the full width */
+  height: 100%; /* Image fills the full height */
+  object-fit: cover; /* Scales the image properly, keeping aspect ratio */
 }
 .proj-imgbx::before {
   content: "";

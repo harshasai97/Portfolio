@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import mario from "../assets/img/mario.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,9 +11,10 @@ import TrackVisibility from "react-on-screen";
 const Projects = () => {
   const projects = [
     {
-      title: "Business Startup 1",
-      description: "Design & Development 1",
-      imgUrl: projImg1,
+      title: "Maze Game",
+      description: "React class components",
+      imgUrl: mario,
+      projectUrl: "https://4c4n26-3000.csb.app/",
     },
     {
       title: "Business Startup 2",
@@ -48,11 +50,7 @@ const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div>
                   <h2>Projects</h2>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
