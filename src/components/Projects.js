@@ -5,6 +5,8 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import mario from "../assets/img/mario.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import Typing from "../assets/img/Typing.jpg";
+import ChatApp from "../assets/img/chatapp.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -17,14 +19,16 @@ const Projects = () => {
       projectUrl: "https://4c4n26-3000.csb.app/",
     },
     {
-      title: "Business Startup 2",
-      description: "Design & Development 2",
-      imgUrl: projImg2,
+      title: "Speed Typping",
+      description: "Vanilla JS",
+      imgUrl: Typing,
+      projectUrl: "https://v862pw-1234.csb.app/",
     },
     {
-      title: "Business Startup 3",
-      description: "Design & Development 3",
-      imgUrl: projImg3,
+      title: "PWA Chat APP",
+      description: "React with Typescript",
+      imgUrl: ChatApp,
+      projectUrl: "https://chat-app-qs9o.vercel.app/",
     },
     {
       title: "Business Startup 4",
@@ -107,7 +111,11 @@ const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img
+        className="background-image-right"
+        alt="no-img"
+        src={colorSharp2}
+      ></img>
     </section>
   );
 };

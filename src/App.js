@@ -1,11 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { NavigationBar, Banner, Skills, Projects, Contact } from "./components";
+import {
+  NavigationBar,
+  Banner,
+  Skills,
+  Projects,
+  Contact,
+  SparkleEffect,
+} from "./components";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
+      <SparkleEffect />
       <NavigationBar />
       <Banner />
       <Skills />

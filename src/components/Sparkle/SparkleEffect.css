@@ -1,0 +1,28 @@
+body {
+  cursor: none;
+}
+
+.sparkle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 10px rgba(170, 54, 124, 0.8),
+    0 0 20px rgba(74, 47, 189, 0.8),
+    0 0 30px rgba(170, 54, 124, 0.6),
+    0 0 40px rgba(74, 47, 189, 0.6);
+  pointer-events: none;
+  animation: sparkle 0.5s ease-out forwards;
+}
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
